@@ -1,6 +1,94 @@
 @import "tailwindcss";
 
+/* ─── Font faces ─── */
+@font-face {
+  font-family: 'HoaTay1';
+  src: url('/fonts/hoatay1.woff2') format('woff2'), url('/fonts/hoatay1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Babylonica';
+  src: url('/fonts/Babylonica-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scarlet Bradley';
+  src: url('/fonts/scarlet-bradleyregular.woff2') format('woff2'), url('/fonts/scarlet-bradleyregular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sunshine Script';
+  src: url('/fonts/sunshine-script.woff2') format('woff2'), url('/fonts/sunshine-script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/quicksand.woff2') format('woff2'), url('/fonts/quicksand.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat.woff2') format('woff2'), url('/fonts/montserrat.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aquarelle';
+  src: url('/fonts/aquarelle.woff2') format('woff2'), url('/fonts/aquarelle.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mallong';
+  src: url('/fonts/mallong.woff2') format('woff2'), url('/fonts/mallong.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RetroSignature';
+  src: url('/fonts/retrosignature.woff2') format('woff2'), url('/fonts/retrosignature.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '1FTV VIP Signora';
+  src: url('/fonts/1FTV-VIP-Signora-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   background-color: #f0f2f5;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
 }
 

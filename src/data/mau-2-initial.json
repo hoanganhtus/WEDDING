@@ -1,0 +1,129 @@
+{
+  "templateId": "mau2",
+  "amThanh": "/mp3/cuoi-thoi-masew.mp3",
+  "hinhBia": "/images/mau-2/1.png",
+  "hinhMinhHoaCuoi": "/images/mau-2/2.png",
+  "hinhBanDo": "/images/mau-2/3.png",
+  "danhSachAnh": [
+    "/images/mau-2/5.png",
+    "/images/mau-2/8.png",
+    "/images/mau-2/2.png",
+    "/images/mau-2/6.png",
+    "/images/mau-2/b3548f69-73dc-4162-96a4-70ba1eb1aef2.jpeg"
+  ],
+  "thongTin": {
+    "chuRe": "Vinh Quang",
+    "coDau": "Thúy Vân",
+    "hoTenChuRe": "Nguyễn Vinh Quang",
+    "hoTenCoDau": "Nguyễn Thị Thúy Vân",
+    "nhaTrai": {
+      "bo": "Nguyễn Văn Thắng",
+      "me": "Trịnh Thị Viên",
+      "diaChi": "Tân Mỹ - Tiến Phong - Bắc Ninh"
+    },
+    "nhaGai": {
+      "bo": "Nguyễn Tuấn Trung",
+      "me": "Nguyễn Thị May",
+      "diaChi": "Phú Cát - Quốc Oai - Hà Nội"
+    },
+    "thoiGian": {
+      "thu": "Chủ Nhật",
+      "ngay": "20",
+      "thang": "12",
+      "nam": "2026",
+      "gio": "14:00"
+    }
+  },
+  "tiecCuoiNhaTrai": {
+    "thu": "Chủ Nhật",
+    "gio": "09:30",
+    "ngay": "20",
+    "thang": "12",
+    "nam": "2026",
+    "amLich": "16 tháng 10 năm Bính Ngọ",
+    "diaDiem": "Tư Gia Nhà Trai",
+    "diaChi": "Tân Mỹ - Tiến Phong - Bắc Ninh",
+    "mapUrl": "https://maps.google.com"
+  },
+  "tiecCuoiNhaGai": {
+    "thu": "Thứ Bảy",
+    "gio": "18:00",
+    "ngay": "19",
+    "thang": "12",
+    "nam": "2026",
+    "amLich": "15 tháng 10 năm Bính Ngọ",
+    "diaDiem": "Nhà Hàng Sen Vàng",
+    "diaChi": "Phú Cát - Quốc Oai - Hà Nội",
+    "mapUrl": "https://maps.google.com"
+  },
+  "leVuQuy": {
+    "thu": "Chủ Nhật",
+    "gio": "09:00",
+    "ngay": "20",
+    "thang": "12",
+    "nam": "2026",
+    "amLich": "16 tháng 10 năm Bính Ngọ",
+    "diaDiem": "Tư Gia Nhà Gái",
+    "mapUrl": "https://maps.google.com"
+  },
+  "leThanhHon": {
+    "thu": "Chủ Nhật",
+    "gio": "14:00",
+    "ngay": "20",
+    "thang": "12",
+    "nam": "2026",
+    "amLich": "16 tháng 10 năm Bính Ngọ",
+    "diaDiem": "Tư Gia Nhà Trai",
+    "mapUrl": "https://maps.google.com"
+  },
+  "loiNhan": "Chúng mình sắp bắt đầu một hành trình mới cùng nhau.\nNiềm vui mong sẽ trọn vẹn hơn khi có bạn bên cạnh.\nCuộc sống quý giá không chỉ ở đích đến, mà còn ở những khoảnh khắc chúng ta sẽ cùng nhau.\nVì vậy, chúng mình mong được bạn cùng vui trong ngày hạnh phúc này.",
+  "trichDan": "Loại bỏ tất cả những lời yêu thương hoa mỹ,\nCó lẽ tình yêu thực sự là sự đồng hành lâu dài.",
+  "images": {
+    "heartSnow": "/images/mau-3/heart.png",
+    "hyIcon": "/images/mau-2/hy.png",
+    "giftBox": "/images/mau-2/bc7ro23uqhun7ge954163l.png",
+    "finalImage": "/images/mau-2/11.png",
+    "albumExtra": "/images/mau-2/968fd388-5dc7-43c4-bac1-5b90cdfcb3c5.jpeg",
+    "countdownBg": "/images/mau-2/4.png",
+    "calendarHighlightIcon": "/images/mau-2/10.png"
+  },
+  "text": {
+    "nhaCoHy": ["Nhà", "Có", "Hỷ"],
+    "thuMoiTiecCuoi": "THƯ MỜI TIỆC CƯỚI",
+    "leThanhHon": "LỄ THÀNH HÔN",
+    "nhaTraiLabel": "NHÀ TRAI",
+    "nhaGaiLabel": "NHÀ GÁI",
+    "trongTrongBaoTin": "TRÂN TRỌNG BÁO TIN LỄ THÀNH HÔN CỦA",
+    "amp": "&",
+    "thuMoiThamDu": "THƯ MỜI THAM DỰ",
+    "tiecCuoiNhaTraiTitle": "TIỆC CƯỚI NHÀ TRAI",
+    "tiecCuoiNhaGaiTitle": "TIỆC CƯỚI NHÀ GÁI",
+    "xemChiDuong": "Xem chỉ đường",
+    "journeyLeVuQuyTitle": "LỄ VU QUY",
+    "journeyLeThanhHonTitle": "LỄ THÀNH HÔN",
+    "journeyVao": "VÀO",
+    "journeyThangLabel": "Tháng",
+    "journeyNamLabel": "Năm",
+    "journeyTucNgay": "Tức Ngày",
+    "journeyTai": "TẠI",
+    "journeyChiDuong": "Chỉ Đường",
+    "journeyMapAlt": "Bản đồ",
+    "guiQuaMung": "Gửi quà mừng tới Cô Dâu – Chú Rể",
+    "album": "ALBUM",
+    "albumOf": "of",
+    "love": "Love",
+    "you": "You",
+    "soLuuBut": "Sổ lưu bút",
+    "trangBia": "Trang Bìa",
+    "giaDinh": "Gia Đình",
+    "suKien": "Sự Kiện",
+    "hanhTrinh": "Hành Trình",
+    "lichCuoi": "Lịch Cưới",
+    "demNguoc": "Đếm Ngược",
+    "xacNhan": "Xác Nhận",
+    "thangLabel": "Tháng",
+    "calendarDayNames": ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+    "invitationLabel": "INVITATION",
+    "countdownLabels": ["ngày", "giờ", "phút", "giây"]
+  }
+}
