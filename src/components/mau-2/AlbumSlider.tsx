@@ -41,11 +41,11 @@ export default function AlbumSlider({ images }: { images: string[] }) {
 
   return (
     <div className="w-full bg-[#611010] pb-2">
-      <div className="relative w-full aspect-4/3 p-4">
+      <div className="relative w-full aspect-4/4 p-4">
         <img
           src={images[current]}
           alt={`Album ảnh ${current + 1}`}
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-full rounded-2x3 object-cover object-top"
         />
         <button
           onClick={prev}
@@ -77,7 +77,7 @@ export default function AlbumSlider({ images }: { images: string[] }) {
           <button
             key={i}
             onClick={() => setCurrent(i)}
-            className={`shrink-0 w-[62px] h-[62px] rounded overflow-hidden border transition-all snap-start ${
+            className={`object-cover shrink-0 w-62px h-70px rounded overflow-hidden border transition-all snap-start ${
               i === current ? "border-blue-500 opacity-100" : "border-transparent hover:opacity-90"
             }`}
           >

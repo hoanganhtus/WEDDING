@@ -18,7 +18,7 @@ export default function RsvpForm() {
     return (
       <div className="text-center py-8 px-4">
         <div className="text-4xl mb-3">💌</div>
-        <p className="text-[#7B1F27] font-semibold text-base">
+        <p className="text-primary font-semibold text-base">
           Cảm ơn {ten} đã xác nhận!
         </p>
         <p className="text-gray-500 text-sm mt-1">
@@ -44,7 +44,7 @@ export default function RsvpForm() {
           value={ten}
           onChange={(e) => setTen(e.target.value)}
           required
-          className="border border-gray-300 rounded-md px-3 py-2 text-[13px] focus:outline-none focus:border-[#7B1F27]"
+          className="border border-gray-300 rounded-md px-3 py-2 text-[13px] focus:outline-none focus:border-primary"
         />
       </div>
 
@@ -57,7 +57,7 @@ export default function RsvpForm() {
             value="co"
             checked={thamDu === "co"}
             onChange={() => setThamDu("co")}
-            className="accent-[#7B1F27]"
+            className="accent-[#611010]"
           />
           Có, tôi sẽ tham dự
         </label>
@@ -68,7 +68,7 @@ export default function RsvpForm() {
             value="khong"
             checked={thamDu === "khong"}
             onChange={() => setThamDu("khong")}
-            className="accent-[#7B1F27]"
+            className="accent-[#611010]"
           />
           Tôi bận, rất tiếc không thể tham dự
         </label>
@@ -80,7 +80,7 @@ export default function RsvpForm() {
           <select
             value={soLuong}
             onChange={(e) => setSoLuong(e.target.value)}
-            className="border border-gray-300 rounded-md px-3 py-2 text-[13px] focus:outline-none focus:border-[#7B1F27]"
+            className="border border-gray-300 rounded-md px-3 py-2 text-[13px] focus:outline-none focus:border-primary"
           >
             {[1, 2, 3, 4, 5].map((n) => (
               <option key={n} value={n}>
@@ -100,7 +100,7 @@ export default function RsvpForm() {
             value="nha-trai"
             checked={phia === "nha-trai"}
             onChange={() => setPhia("nha-trai")}
-            className="accent-[#7B1F27]"
+            className="accent-[#611010]"
           />
           Nhà trai
         </label>
@@ -111,7 +111,7 @@ export default function RsvpForm() {
             value="nha-gai"
             checked={phia === "nha-gai"}
             onChange={() => setPhia("nha-gai")}
-            className="accent-[#7B1F27]"
+            className="accent-[#611010]"
           />
           Nhà gái
         </label>

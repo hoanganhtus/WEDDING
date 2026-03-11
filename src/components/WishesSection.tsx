@@ -67,10 +67,10 @@ export default function WishesSection({
   const subTextColor = primaryColor + "99";
 
   return (
-    <div className={`absolute bottom-0 left-0 right-0 z-50 flex flex-col items-end px-3 pb-3 pointer-events-none ${className}`}>
+    <div className={`fixed bottom-[4.5rem] right-4 z-50 flex flex-col items-end pointer-events-none ${className}`}>
       {open && (
         <div
-          className="pointer-events-auto w-full rounded-2xl mb-2 shadow-2xl overflow-hidden"
+          className="pointer-events-auto w-72 rounded-2xl mb-2 shadow-2xl overflow-hidden"
           style={{ background: cardBg, border: `1px solid ${borderColor}` }}
         >
           <div

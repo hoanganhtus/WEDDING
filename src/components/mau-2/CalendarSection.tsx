@@ -25,7 +25,7 @@ export default function CalendarSection({
   ];
 
   return (
-    <div className="w-full max-w-sm mx-auto border-b-1 border-[#e8c4c4]">
+    <div className="w-full max-w-sm mx-6 border-b-1 border-[#e8c4c4]">
       <div className="bg-[#611010] flex justify-end gap-2 py-1">
         <span
           className="self-right mr-4 text-white text-[23px] italic"

@@ -49,7 +49,7 @@ function CountdownTimer({
       {boxes.map(({ value, label }) => (
         <div
           key={label}
-          className="flex flex-col items-center justify-center bg-[#8a0d0d] text-white rounded-md w-[54px] h-[67px] shadow"
+          className="flex flex-col items-center justify-center bg-[#611010] text-white rounded-md w-[54px] h-[67px] shadow"
           style={{ fontFamily: "Arial" }}
         >
           <span className="text-[10px] font-bold leading-none">{value}</span>
@@ -71,11 +71,10 @@ export default function InvitationCountdownSection({
   countdownLabels = ["ngày", "giờ", "phút", "giây"],
 }: InvitationCountdownSectionProps) {
   return (
-    <section ref={sectionRef} className="relative bg-white text-center mb-17">
+    <section ref={sectionRef} className="relative bg-[#930101] text-center mb-17 mt-5">
       <div className="w-full">
         <div className="relative">
-          <img src={bgImage} alt="" className="w-full object-cover" />
-          <div className="pointer-events-none absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-white/90 to-transparent" />
+          <img src={bgImage} alt="" className="w-full object-cover px-6" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -88,7 +87,7 @@ export default function InvitationCountdownSection({
             {invitationLabel}
           </p>
           <p
-            className="italic text-[#7B1F27] mb-10"
+            className="italic text-primary mb-10"
             style={{ fontFamily: "HoaTay1", fontSize: "19px" }}
           >
             {chuRe} – {coDau}

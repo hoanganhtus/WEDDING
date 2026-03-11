@@ -24,14 +24,14 @@ export default function WeddingEventCard({
   mapLabel?: string;
 }) {
   return (
-    <div className={`bg-[#611010] text-white rounded-[30px] py-4 text-center shadow-md ${className}`}>
+    <div className={`bg-[#811818] text-white rounded-[30px] py-4 text-center shadow-md ${className}`}>
       <div style={{ position: "relative", width: "100%", height: "100%", padding: "0px", borderRadius: "0px", boxShadow: "none", backgroundColor: "transparent", display: "flex", alignItems: "center", justifyContent: "center", boxSizing: "border-box", opacity: 1, border: "0px solid" }}>
         <div style={{ height: "auto", width: "100%", minWidth: "20px", color: "rgb(250, 245, 245)", fontSize: "14.304px", textShadow: "rgba(0,0,0,0) 0px 0px 2px", fontWeight: "normal", fontFamily: '"Scarlet Bradley", "1FTV VIP Signora", serif', textAlign: "center", lineHeight: "1.63", letterSpacing: "0px", textTransform: "uppercase", textDecoration: "none", fontStyle: "normal", pointerEvents: "none", overflow: "hidden", wordBreak: "break-word" }}>
           {title}
         </div>
       </div>
 
-      <p className="text-[11px] opacity-80">
+      <p className="text-[15px] opacity-80">
         {event.thu.toUpperCase()} - {event.gio}
       </p>
 
