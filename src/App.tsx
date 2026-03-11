@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import Audio from "./components/Audio";
 import Envelope from "./components/Envelope";
 import SnowCanvas from "./components/SnowCanvas";
@@ -8,14 +8,12 @@ import AlbumSlider from "./components/mau-2/AlbumSlider";
 import CalendarSection from "./components/mau-2/CalendarSection";
 import JourneySection from "./components/mau-2/JourneySection";
 import RsvpForm from "./components/mau-2/RsvpForm";
-import CoverTextItem from "./components/mau-2/CoverTextItem";
 import WeddingEventCard from "./components/mau-2/WeddingEventCard";
 import WishesSection from "./components/WishesSection";
 import jsonData from "./data/mau-2-initial.json";
 import { PRIMARY_COLOR, GOLD_COLOR } from "./theme";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
 
@@ -27,12 +25,6 @@ function App() {
   const countdownRef = useRef<HTMLElement>(null);
   const rsvpRef = useRef<HTMLElement>(null);
   const albumRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   // Auto-scroll được xử lý bởi <AutoScrollContainer duration={0} />
 
