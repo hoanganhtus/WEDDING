@@ -97,9 +97,15 @@ function App() {
       />
 
       <div
-        className="relative max-w-md w-full"
+        className="relative max-w-md w-full overflow-hidden"
         style={{ margin: "auto", height: "100vh" }}
       >
+        {/* Nút phát nhạc nổi */}
+        <Audio
+          src={jsonData.amThanh || "/mp3/bai-nay-khong-de-di-dien.mp3"}
+          className="!absolute right-2 top-2 z-50 scale-70 !bottom-auto !right-2"
+        />
+
         <AutoScrollContainer
           duration={100000}
           delay={500}
@@ -132,10 +138,6 @@ function App() {
               minHeight: "50px",
             }}
           >
-            <Audio
-              src={jsonData.amThanh || "/mp3/bai-nay-khong-de-di-dien.mp3"}
-              className="absolute right-2 top-1 scale-70 bottom-[none]"
-            />
 
             {/* Nút menu nổi */}
             <button
@@ -277,44 +279,44 @@ function App() {
                     <img
                       src="/images/mau-2/avata-chong.png"
                       alt="Chú rể"
-                      className="w-30 h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
+                      className="w-24 h-24 sm:w-30 sm:h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
                       loading="lazy"
                       decoding="async"
                     />
-                    <div className="flex flex-col items-end text-left flex-1">
-                      <p className="text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
+                    <div className="flex flex-col items-end text-right flex-1 min-w-0">
+                      <p className="text-[16px] sm:text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
                         {text.nhaTraiLabel || "NHÀ TRAI"}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                      <p className="text-[13px] sm:text-[15px] text-[#fef9e6] font-medium truncate w-full text-right">
                         Ông : {thongTin.nhaTrai.bo}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                      <p className="text-[13px] sm:text-[15px] text-[#fef9e6] font-medium truncate w-full text-right">
                         Bà : {thongTin.nhaTrai.me}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6]">
+                      <p className="text-[12px] sm:text-[15px] text-[#fef9e6] line-clamp-2 break-words w-full text-right">
                         {thongTin.nhaTrai.diaChi}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="flex flex-col flex-1">
-                      <p className="text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
+                    <div className="flex flex-col flex-1 text-left min-w-0">
+                      <p className="text-[16px] sm:text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
                         {text.nhaGaiLabel || "NHÀ GÁI"}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                      <p className="text-[13px] sm:text-[15px] text-[#fef9e6] font-medium truncate w-full">
                         Ông : {thongTin.nhaGai.bo}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                      <p className="text-[13px] sm:text-[15px] text-[#fef9e6] font-medium truncate w-full">
                         Bà : {thongTin.nhaGai.me}
                       </p>
-                      <p className="text-[15px] text-[#fef9e6]">
+                      <p className="text-[12px] sm:text-[15px] text-[#fef9e6] line-clamp-2 break-words w-full">
                         {thongTin.nhaGai.diaChi}
                       </p>
                     </div>
                     <img
                       src="/images/mau-2/avata-vo.png"
                       alt="Cô dâu"
-                      className="w-30 h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
+                      className="w-24 h-24 sm:w-30 sm:h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
                       loading="lazy"
                       decoding="async"
                     />
