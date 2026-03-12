@@ -50,7 +50,7 @@
     "amLich": "24 tháng 02 năm Bính Ngọ",
     "diaDiem": "Tư Gia Nhà Trai",
     "diaChi": "Tiến Bộ - Hợp Thành - Thái Nguyên",
-    "mapUrl": "https://maps.google.com"
+    "mapUrl": "https://maps.app.goo.gl/fapseMbVWMHfmVbF6"
   },
   "tiecCuoiNhaGai": {
     "thu": "Thứ 7",
@@ -61,7 +61,7 @@
     "amLich": "24 tháng 02 năm Bính Ngọ",
     "diaDiem": "Tại Tư Gia Nhà Gái",
     "diaChi": "Khuân Bang - Chợ Mới - Thái Nguyên",
-    "mapUrl": "https://maps.google.com"
+    "mapUrl": "https://maps.app.goo.gl/XQe4vhEViNeVyuhG7"
   },
   "leVuQuy": {
     "thu": "Thứ 7",
@@ -71,7 +71,7 @@
     "nam": "2026",
     "amLich": "24 tháng 02 năm Bính Ngọ",
     "diaDiem": "Tư Gia Nhà Gái",
-    "mapUrl": "https://maps.google.com"
+    "mapUrl": "https://maps.app.goo.gl/XQe4vhEViNeVyuhG7"
   },
   "leThanhHon": {
     "thu": "Thứ 7",
@@ -81,7 +81,7 @@
     "nam": "2026",
     "amLich": "24 tháng 02 năm Bính Ngọ",
     "diaDiem": "Tư Gia Nhà Trai",
-    "mapUrl": "https://maps.google.com"
+    "mapUrl": "https://maps.app.goo.gl/fapseMbVWMHfmVbF6"
   },
   "loiNhan": "Chúng mình sắp bắt đầu một hành trình mới cùng nhau.\nNiềm vui mong sẽ trọn vẹn hơn khi có bạn bên cạnh.\nCuộc sống quý giá không chỉ ở đích đến, mà còn ở những khoảnh khắc chúng ta sẽ cùng nhau.\nVì vậy, chúng mình mong được bạn cùng vui trong ngày hạnh phúc này.",
   "trichDan": "Loại bỏ tất cả những lời yêu thương hoa mỹ,\nCó lẽ tình yêu thực sự là sự đồng hành lâu dài.",
@@ -95,7 +95,11 @@
     "calendarHighlightIcon": "/images/mau-2/10.png"
   },
   "text": {
-    "nhaCoHy": ["Nhà", "Có", "Hỷ"],
+    "nhaCoHy": [
+      "Nhà",
+      "Có",
+      "Hỷ"
+    ],
     "thuMoiTiecCuoi": "THƯ MỜI TIỆC CƯỚI",
     "leThanhHon": "LỄ THÀNH HÔN",
     "nhaTraiLabel": "NHÀ TRAI",
@@ -129,8 +133,21 @@
     "demNguoc": "Đếm Ngược",
     "xacNhan": "Xác Nhận",
     "thangLabel": "Tháng",
-    "calendarDayNames": ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+    "calendarDayNames": [
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6",
+      "T7",
+      "CN"
+    ],
     "invitationLabel": "INVITATION",
-    "countdownLabels": ["ngày", "giờ", "phút", "giây"]
+    "countdownLabels": [
+      "ngày",
+      "giờ",
+      "phút",
+      "giây"
+    ]
   }
 }

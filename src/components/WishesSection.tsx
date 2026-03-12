@@ -1,11 +1,5 @@
-import { useState } from "react";
-
-interface Wish {
-  id: string;
-  name: string;
-  message: string;
-  created_at: string;
-}
+import { useState, useEffect } from "react";
+import { getWishesList, addWish, type WishEntry } from "../lib/storage";
 
 interface WishesSectionProps {
   primaryColor?: string;
@@ -41,21 +35,26 @@ export default function WishesSection({
   className = "",
 }: WishesSectionProps) {
   const [open, setOpen] = useState(false);
-  const [wishes, setWishes] = useState<Wish[]>([]);
+  const [wishes, setWishes] = useState<WishEntry[]>([]);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    setWishes(getWishesList());
+  }, []);
 
   const appendEmoji = (emoji: string) => setMessage((prev) => prev + emoji);
 
   const handleSubmit = () => {
     if (!name.trim() || !message.trim()) return;
-    const newWish: Wish = {
+    const newWish: WishEntry = {
       id: Date.now().toString(),
       name: name.trim(),
       message: message.trim(),
       created_at: new Date().toISOString(),
     };
+    addWish(newWish);
     setWishes((prev) => [newWish, ...prev]);
     setName("");
     setMessage("");

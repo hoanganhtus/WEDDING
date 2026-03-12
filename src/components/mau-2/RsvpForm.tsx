@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type React from "react";
+import { addRsvp } from "../../lib/storage";
 
 export default function RsvpForm() {
   const [ten, setTen] = useState("");
@@ -11,6 +12,14 @@ export default function RsvpForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!ten.trim()) return;
+    addRsvp({
+      id: Date.now().toString(),
+      ten: ten.trim(),
+      thamDu,
+      soLuong: parseInt(soLuong),
+      phia,
+      createdAt: new Date().toISOString(),
+    });
     setSubmitted(true);
   };
 
