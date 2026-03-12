@@ -273,33 +273,51 @@ function App() {
                 </div> */}
 
                 <div className="flex flex-col gap-4 border-l-3 border-[#999999] ml-1 pl-1 pt-2 pb-2">
-                  <div className="flex flex-col items-end text-left mr-1">
-                    <p className="text-[15px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
-                      {text.nhaTraiLabel || "NHÀ TRAI"}
-                    </p>
-                    <p className="text-[11px] text-[#fef9e6] font-medium">
-                      Ông : {thongTin.nhaTrai.bo}
-                    </p>
-                    <p className="text-[11px] text-[#fef9e6] font-medium">
-                      Bà : {thongTin.nhaTrai.me}
-                    </p>
-                    <p className="text-[10.4px] text-[#fef9e6]">
-                      {thongTin.nhaTrai.diaChi}
-                    </p>
+                  <div className="flex items-center gap-3 mr-1">
+                    <img
+                      src="/images/mau-2/avata-chong.png"
+                      alt="Chú rể"
+                      className="w-30 h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="flex flex-col items-end text-left flex-1">
+                      <p className="text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
+                        {text.nhaTraiLabel || "NHÀ TRAI"}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                        Ông : {thongTin.nhaTrai.bo}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                        Bà : {thongTin.nhaTrai.me}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6]">
+                        {thongTin.nhaTrai.diaChi}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-[15px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
-                      {text.nhaGaiLabel || "NHÀ GÁI"}
-                    </p>
-                    <p className="text-[11px] text-[#fef9e6] font-medium">
-                      Ông : {thongTin.nhaGai.bo}
-                    </p>
-                    <p className="text-[11px] text-[#fef9e6] font-medium">
-                      Bà : {thongTin.nhaGai.me}
-                    </p>
-                    <p className="text-[10.4px] text-[#fef9e6]">
-                      {thongTin.nhaGai.diaChi}
-                    </p>
+                  <div className="flex items-center gap-3">
+                    <div className="flex flex-col flex-1">
+                      <p className="text-[20px] tracking-widest uppercase font-medium text-[#fef9e6] mb-1">
+                        {text.nhaGaiLabel || "NHÀ GÁI"}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                        Ông : {thongTin.nhaGai.bo}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6] font-medium">
+                        Bà : {thongTin.nhaGai.me}
+                      </p>
+                      <p className="text-[15px] text-[#fef9e6]">
+                        {thongTin.nhaGai.diaChi}
+                      </p>
+                    </div>
+                    <img
+                      src="/images/mau-2/avata-vo.png"
+                      alt="Cô dâu"
+                      className="w-30 h-30 rounded-full object-cover border-2 border-[#fef9e6]/40 flex-shrink-0"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
                 </div>
               </div>
@@ -314,22 +332,24 @@ function App() {
                 </p> */}
                 <div className="w-full mt-2 text-[#fef9e6]">
                   <p
-                    className="w-full text-[28px] tracking-3 left-0 font-medium"
-                    style={{ fontFamily: "HoaTay1" }}
+                    className="w-full text-[35px] tracking-3 text-right pr-6 leading-tight"
+                    style={{ fontFamily: "HoaTay1", fontWeight: "500" }}
                   >
                     {thongTin.hoTenChuRe ?? thongTin.chuRe}
                   </p>
                   <span
+                    className="block text-center leading-tight"
                     style={{
-                      fontSize: "20px",
+                      fontSize: "30px",
                       fontFamily: "HoaTay1",
+                      fontWeight: "500",
                     }}
                   >
                     {text.amp || "&"}
                   </span>
                   <p
-                    className="text-[28px] tracking-3 font-medium"
-                    style={{ fontFamily: "HoaTay1" }}
+                    className="w-full text-[35px] tracking-3 text-left pl-6 top-6 leading-tight"
+                    style={{ fontFamily: "HoaTay1", fontWeight: "500" }}
                   >
                     {thongTin.hoTenCoDau ?? thongTin.coDau}
                   </p>
@@ -429,7 +449,7 @@ function App() {
                   ]
                 }
                 highlightIcon={
-                  images.calendarHighlightIcon || "/images/mau-2/10.webp"
+                  images.calendarHighlightIcon || "/images/mau-2/10.png"
                 }
               />
             </section>
@@ -451,31 +471,139 @@ function App() {
             />
 
             {/* Ảnh Love / You */}
-            <section className="bg-primary w-full">
-              <div className="w-full px-9">
-                <img src="/images/mau-2/5.webp" alt="Love" className="w-full object-cover" loading="lazy" decoding="async" />
-                <span
-                  className="block text-[20px] text-[#fef9e6] italic px-3 pt-1"
-                  style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
+            {/* Ảnh Love / You — scrapbook collage */}
+            <section className="bg-primary w-full py-6 px-4">
+              <div style={{ position: "relative", width: "100%", height: "600px"}}>
+
+                {/* Text trên cùng bên trái */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 1,
+                    left: 10,
+                    zIndex: 1,
+                  }}
                 >
-                  {text.love || "Love"}
-                </span>
-              </div>
-              <div className="w-full px-9">
-                <img src="/images/mau-2/12.webp" alt="You" className="w-full object-cover" loading="lazy" decoding="async" />
-                <span
-                  className="block text-[20px] text-[#fef9e6] italic px-3 pt-1 text-right"
-                  style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
+                  <p
+                    className="text-[11px] text-[#fef9e6]/80 uppercase tracking-[3px] leading-relaxed"
+                    style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
+                  >
+                    {text.love || "Love"}<br />
+                    {text.you || "You"}
+                  </p>
+                </div>
+
+                {/* Ảnh 1: Trên trái — nghiêng nhẹ */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 50,
+                    left: 5,
+                    width: "50%",
+                    zIndex: 3,
+                    transform: "rotate(-3deg)",
+                  }}
                 >
-                  {text.you || "You"}
-                </span>
-              </div>
-              <div
-                className="bg-[#611010] text-white text-center py-2 px-3 text-[12px] mx-9"
-                style={{ fontFamily: "Mallong" }}
-              >
-                {trichDan ||
-                  "Khi mây và sương tan biến, anh yêu em và mọi người đều biết điều đó"}
+                  <div className="bg-primary p-[5px] pb-[18px] shadow-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}>
+                    <img
+                      src="/images/mau-2/5.webp"
+                      alt="Love"
+                      className="w-full object-cover"
+                      style={{ aspectRatio: "3/4" }}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                {/* Ảnh 2: Trên phải — nghiêng ngược */}
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 2,
+                    right: 2,
+                    width: "50%",
+                    zIndex: 2,
+                    transform: "rotate(2.5deg)",
+                  }}
+                >
+                  <div className="bg-primary p-[5px] pb-[18px] shadow-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}>
+                    <img
+                      src="/images/mau-2/4.webp"
+                      alt="Couple"
+                      className="w-full object-cover"
+                      style={{ aspectRatio: "3/4" }}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                {/* Ảnh 3: Dưới trái — đè lên ảnh trên */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 40,
+                    left: 4,
+                    width: "50%",
+                    zIndex: 5,
+                    transform: "rotate(2deg)",
+                  }}
+                >
+                  <div className="bg-primary p-[5px] pb-[18px] shadow-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}>
+                    <img
+                      src="/images/mau-2/12.webp"
+                      alt="Together"
+                      className="w-full object-cover"
+                      style={{ aspectRatio: "3/4" }}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                {/* Ảnh 4: Dưới phải — nghiêng */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: 70,
+                    right: 0,
+                    width: "50%",
+                    zIndex: 4,
+                    transform: "rotate(-2.5deg)",
+                  }}
+                >
+                  <div className="bg-primary p-[5px] pb-[18px] shadow-lg" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.25)" }}>
+                    <img
+                      src="/images/mau-2/5.webp"
+                      alt="Forever"
+                      className="w-full object-cover"
+                      style={{ aspectRatio: "3/4" }}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                {/* Text dưới cùng bên phải */}
+                <div
+                  style={{
+                    position: "absolute",
+                    bottom: -30,
+                    right: 0,
+                    zIndex: 5,
+                    textAlign: "right",
+                    width: "50%",
+                  }}
+                >
+                  <p
+                    className="text-[15px] text-[#fef9e6]/75 leading-relaxed text-center"
+                    style={{ fontFamily: "Mallong" }}
+                  >
+                    {trichDan || "Khi mây và sương tan biến, anh yêu em và mọi người đều biết điều đó"}
+                  </p>
+                </div>
+
               </div>
             </section>
 
@@ -503,7 +631,7 @@ function App() {
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="text-[13px] text-gray-700 text-center font-medium">
+                <p className="text-[13px] text-[#fef9e6] text-center font-medium">
                   {text.guiQuaMung || "Gửi quà mừng tới Cô Dâu – Chú Rể"}
                 </p>
               </div>
