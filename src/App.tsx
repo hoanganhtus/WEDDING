@@ -90,7 +90,7 @@ function App() {
       }}
     >
       <SnowCanvas
-        image={images.heartSnow || "/images/mau-3/heart.png"}
+        image={images.heartSnow || "/images/mau-3/heart.webp"}
         className="z-20"
         size={12}
         count={70}
@@ -240,7 +240,7 @@ function App() {
                   Happy Wedding
                 </div>
                 <div style={{ fontSize: "23px", color: "#611010", fontFamily: "HoaTay1", fontWeight: "600" }}>
-                  Anh Tú &amp; Trịnh Huyền
+                  Trịnh Huyền &amp; Anh Tú 
                 </div>
               </div>
             </section>
@@ -262,7 +262,7 @@ function App() {
 
                 {/* <div className="absolute -top-4 right-2 flex flex-col mb-1">
                   <img
-                    src={images.hyIcon || "/images/mau-2/hy.png"}
+                    src={images.hyIcon || "/images/mau-2/hy.webp"}
                     alt="hy"
                     width={40}
                     height={40}
@@ -429,7 +429,7 @@ function App() {
                   ]
                 }
                 highlightIcon={
-                  images.calendarHighlightIcon || "/images/mau-2/10.png"
+                  images.calendarHighlightIcon || "/images/mau-2/10.webp"
                 }
               />
             </section>
@@ -441,7 +441,7 @@ function App() {
               coDau={thongTin.coDau}
               loiNhan={loiNhan}
               targetDate={targetDate}
-              bgImage={images.countdownBg || "/images/mau-2/4.jpg"}
+              bgImage={images.countdownBg || "/images/mau-2/4.webp"}
               invitationLabel={text.invitationLabel || "INVITATION"}
               countdownLabels={
                 (text.countdownLabels as [string, string, string, string]) || [
@@ -453,7 +453,7 @@ function App() {
             {/* Ảnh Love / You */}
             <section className="bg-primary w-full">
               <div className="w-full px-9">
-                <img src="/images/mau-2/5.jpg" alt="Love" className="w-full object-cover" loading="lazy" decoding="async" />
+                <img src="/images/mau-2/5.webp" alt="Love" className="w-full object-cover" loading="lazy" decoding="async" />
                 <span
                   className="block text-[20px] text-[#fef9e6] italic px-3 pt-1"
                   style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
@@ -462,7 +462,7 @@ function App() {
                 </span>
               </div>
               <div className="w-full px-9">
-                <img src="/images/mau-2/12.jpg" alt="You" className="w-full object-cover" loading="lazy" decoding="async" />
+                <img src="/images/mau-2/12.webp" alt="You" className="w-full object-cover" loading="lazy" decoding="async" />
                 <span
                   className="block text-[20px] text-[#fef9e6] italic px-3 pt-1 text-right"
                   style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
@@ -482,7 +482,7 @@ function App() {
             {/* Xác nhận tham dự */}
             <section ref={rsvpRef} className="relative w-full mt-6">
               <img
-                src="/images/mau-2/7.jpg"
+                src="/images/mau-2/7.webp"
                 alt="RSVP background"
                 className="w-full object-cover"
                 loading="lazy"
@@ -497,7 +497,7 @@ function App() {
             <section className="relative bg-primary py-6 px-4">
               <div className="flex flex-col items-center gap-3 border border-gray-200 rounded-[5px] py-6 px-4">
                 <img
-                  src={images.giftBox || "/images/mau-2/bc7ro23uqhun7ge954163l.png"}
+                  src={images.giftBox || "/images/mau-2/bc7ro23uqhun7ge954163l.webp"}
                   alt="Quà mừng"
                   className="w-24 h-24 object-contain"
                   loading="lazy"
@@ -538,7 +538,7 @@ function App() {
             {/* Ảnh kết */}
             <div className="w-full">
               <img
-                src={images.finalImage || "/images/mau-2/11.png"}
+                src={images.finalImage || "/images/mau-2/11.webp"}
                 alt="Ảnh kết trang"
                 className="w-full object-cover"
                 loading="lazy"

@@ -1,22 +1,22 @@
 {
   "templateId": "mau2",
   "amThanh": "/mp3/bai-nay-khong-de-di-dien.mp3",
-  "hinhBia": "/images/mau-2/8.jpg",
-  "hinhMinhHoaCuoi": "/images/mau-2/2.jpg",
+  "hinhBia": "/images/mau-2/8.webp",
+  "hinhMinhHoaCuoi": "/images/mau-2/2.webp",
   "hinhBanDo": "/images/mau-2/3.png",
   "danhSachAnh": [
-    "/images/mau-2/1.png",
-    "/images/mau-2/2.jpg",
-    "/images/mau-2/3.jpg",
-    "/images/mau-2/4.jpg",
-    "/images/mau-2/5.jpg",
-    "/images/mau-2/6.jpg",
-    "/images/mau-2/7.jpg",
-    "/images/mau-2/8.jpg",
-    "/images/mau-2/9.jpg",
-    "/images/mau-2/10.jpg",
-    "/images/mau-2/11.jpg",
-    "/images/mau-2/12.jpg"
+    "/images/mau-2/1.webp",
+    "/images/mau-2/2.webp",
+    "/images/mau-2/3.webp",
+    "/images/mau-2/4.webp",
+    "/images/mau-2/5.webp",
+    "/images/mau-2/6.webp",
+    "/images/mau-2/7.webp",
+    "/images/mau-2/8.webp",
+    "/images/mau-2/9.webp",
+    "/images/mau-2/10.webp",
+    "/images/mau-2/11.webp",
+    "/images/mau-2/12.webp"
   ],
   "thongTin": {
     "chuRe": "Anh Tú",
@@ -86,13 +86,13 @@
   "loiNhan": "Chúng mình sắp bắt đầu một hành trình mới cùng nhau.\nNiềm vui mong sẽ trọn vẹn hơn khi có bạn bên cạnh.\nCuộc sống quý giá không chỉ ở đích đến, mà còn ở những khoảnh khắc chúng ta sẽ cùng nhau.\nVì vậy, chúng mình mong được bạn cùng vui trong ngày hạnh phúc này.",
   "trichDan": "Loại bỏ tất cả những lời yêu thương hoa mỹ,\nCó lẽ tình yêu thực sự là sự đồng hành lâu dài.",
   "images": {
-    "heartSnow": "/images/mau-3/1.png",
-    "hyIcon": "/images/mau-2/hy.png",
-    "giftBox": "/images/mau-2/bc7ro23uqhun7ge954163l.png",
-    "finalImage": "/images/mau-2/11.jpg",
+    "heartSnow": "/images/mau-3/1.webp",
+    "hyIcon": "/images/mau-2/hy.webp",
+    "giftBox": "/images/mau-2/bc7ro23uqhun7ge954163l.webp",
+    "finalImage": "/images/mau-2/11.webp",
     "albumExtra": "/images/mau-2/968fd388-5dc7-43c4-bac1-5b90cdfcb3c5.jpeg",
-    "countdownBg": "/images/mau-2/4.jpg",
-    "calendarHighlightIcon": "/images/mau-2/10.png"
+    "countdownBg": "/images/mau-2/4.webp",
+    "calendarHighlightIcon": "/images/mau-2/10.webp"
   },
   "text": {
     "nhaCoHy": [

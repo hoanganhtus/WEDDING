@@ -66,7 +66,7 @@ export default function InvitationCountdownSection({
   coDau,
   loiNhan,
   targetDate,
-  bgImage = "/images/mau-2/4.png",
+  bgImage = "/images/mau-2/4.webp",
   invitationLabel = "INVITATION",
   countdownLabels = ["ngày", "giờ", "phút", "giây"],
 }: InvitationCountdownSectionProps) {
