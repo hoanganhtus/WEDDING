@@ -1,10 +1,9 @@
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import FadeIn from "./components/FadeIn";
-import Audio from "./components/Audio";
+import PageLayout from "./components/PageLayout";
 import Envelope from "./components/Envelope";
 import SnowCanvas from "./components/SnowCanvas";
-import AutoScrollContainer from "./components/AutoScrollContainer";
 import InvitationCountdownSection from "./components/mau-2/InvitationCountdownSection";
 import AlbumSlider from "./components/mau-2/AlbumSlider";
 import CalendarSection from "./components/mau-2/CalendarSection";
@@ -12,12 +11,14 @@ import JourneySection from "./components/mau-2/JourneySection";
 import RsvpForm from "./components/mau-2/RsvpForm";
 import WeddingEventCard from "./components/mau-2/WeddingEventCard";
 import WishesSection from "./components/WishesSection";
+import GiftPopup from "./components/GiftPopup";
 import jsonData from "./data/mau-2-initial.json";
 import { PRIMARY_COLOR, GOLD_COLOR } from "./theme";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
+  const [showGiftPopup, setShowGiftPopup] = useState(false);
 
   const coverRef = useRef<HTMLElement>(null);
   const familyRef = useRef<HTMLElement>(null);
@@ -101,79 +102,37 @@ function App() {
             count={70}
           />
 
-          <div
-            className="relative max-w-md w-full overflow-hidden"
-            style={{ margin: "auto", height: "100vh" }}
-          >
-            {/* Nút phát nhạc nổi */}
-            <Audio
-              src={jsonData.amThanh || "/mp3/bai-nay-khong-de-di-dien.mp3"}
-              className="!absolute right-2 top-2 z-50 scale-70 !bottom-auto !right-2"
-            />
-
-            <AutoScrollContainer
-              duration={100000}
-              delay={500}
-              className="[&::-webkit-scrollbar]:w-[6px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-400/60 [&::-webkit-scrollbar-thumb]:rounded-full w-full"
-              style={{
-                height: "100vh",
-                margin: "auto",
-                position: "relative",
-                border: "1px solid rgb(224, 224, 224)",
-                boxShadow: "rgba(0, 0, 0, 0.1) 0px 0px 10px 0px",
-                borderRadius: "3px",
-                backgroundColor: "rgb(255, 255, 255)",
-                overflow: "hidden auto",
-                touchAction: "auto",
-              }}
+          <PageLayout>
+            {/* Nút menu nổi */}
+            <button
+              onClick={() => setMenuOpen((v) => !v)}
+              className="fixed bottom-6 right-4 z-40 bg-white/90 border border-gray-200 shadow-md rounded-full w-10 h-10 flex items-center justify-center"
+              aria-label="Menu"
             >
-              <div
-                className="bg-primary font-sans"
-                style={{
-                  overflowX: "hidden",
-                  position: "relative",
-                  userSelect: "auto",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  flexDirection: "column",
-                  boxSizing: "border-box",
-                  width: "100%",
-                  minWidth: "50px",
-                  minHeight: "50px",
-                }}
+              <svg
+                viewBox="0 0 24 24"
+                className="w-5 h-5 text-primary"
+                fill="currentColor"
               >
+                <rect y="5" width="24" height="2" rx="1" />
+                <rect y="11" width="24" height="2" rx="1" />
+                <rect y="17" width="24" height="2" rx="1" />
+              </svg>
+            </button>
 
-                {/* Nút menu nổi */}
-                <button
-                  onClick={() => setMenuOpen((v) => !v)}
-                  className="fixed bottom-6 right-4 z-40 bg-white/90 border border-gray-200 shadow-md rounded-full w-10 h-10 flex items-center justify-center"
-                  aria-label="Menu"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="w-5 h-5 text-primary"
-                    fill="currentColor"
+            {menuOpen && (
+              <div className="fixed bottom-20 right-4 z-40 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden min-w-35">
+                {menuItems.map(({ key, label }) => (
+                  <button
+                    key={key}
+                    onClick={() => scrollTo(key)}
+                    className="w-full text-left px-4 py-2.5 text-[13px] text-gray-700 hover:bg-primary hover:text-white transition-colors"
                   >
-                    <rect y="5" width="24" height="2" rx="1" />
-                    <rect y="11" width="24" height="2" rx="1" />
-                    <rect y="17" width="24" height="2" rx="1" />
-                  </svg>
-                </button>
-
-                {menuOpen && (
-                  <div className="fixed bottom-20 right-4 z-40 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden min-w-35">
-                    {menuItems.map(({ key, label }) => (
-                      <button
-                        key={key}
-                        onClick={() => scrollTo(key)}
-                        className="w-full text-left px-4 py-2.5 text-[13px] text-gray-700 hover:bg-primary hover:text-white transition-colors"
-                      >
-                        {label}
-                      </button>
-                    ))}
-                  </div>
-                )}
+                    {label}
+                  </button>
+                ))}
+              </div>
+            )}
 
                 {/* Trang bìa */}
                 <section
@@ -474,7 +433,7 @@ function App() {
                 {/* Ảnh Love / You — scrapbook collage */}
                 <section className="bg-primary w-full py-6 px-4">
                   <FadeIn variant="scale">
-                    <div style={{ position: "relative", width: "100%", height: "650px" }}>
+                    <div style={{ position: "relative", width: "100%", height: "auto", minHeight: "clamp(560px, 80vw, 650px)" }}>
                       <div
                         style={{
                           position: "absolute",
@@ -588,7 +547,7 @@ function App() {
                       <div
                         style={{
                           position: "absolute",
-                          bottom: -10,
+                          bottom: -20,
                           right: -10,
                           zIndex: 5,
                           textAlign: "right",
@@ -596,8 +555,8 @@ function App() {
                         }}
                       >
                         <p
-                          className="text-[15px] text-[#fef9e6]/75 leading-relaxed text-center"
-                          style={{ fontFamily: "Mallong" }}
+                          className="text-[12px] text-[#fef9e6]/75 leading-relaxed text-center"
+                          style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
                         >
                           {trichDan || "Khi mây và sương tan biến, anh yêu em và mọi người đều biết điều đó"}
                         </p>
@@ -627,14 +586,26 @@ function App() {
 
                 {/* Gửi quà mừng */}
                 <section className="relative bg-primary py-6 px-4">
-                  <div className="flex flex-col items-center gap-3 border border-gray-200 rounded-[5px] py-6 px-4">
+                  <div
+                    onClick={() => setShowGiftPopup(true)}
+                    className="flex flex-col items-center gap-3 border border-[#cf9c52]/30 rounded-[10px] py-6 px-4 cursor-pointer hover:bg-[#fef9e6]/50 transition-colors shadow-sm"
+                  >
                     <FadeIn variant="scale">
-                      <img
+                      <motion.img
                         src={images.giftBox || "/images/mau-2/bc7ro23uqhun7ge954163l.webp"}
                         alt="Quà mừng"
-                        className="w-24 h-24 object-contain mx-auto"
+                        className="w-24 h-24 object-contain mx-auto block origin-bottom"
                         loading="lazy"
                         decoding="async"
+                        animate={{
+                          rotate: [0, -5, 5, -5, 5, -5, 5, 0]
+                        }}
+                        transition={{
+                          duration: 1,
+                          repeat: Infinity,
+                          repeatDelay: 1,
+                          ease: "easeInOut"
+                        }}
                       />
                     </FadeIn>
                     <FadeIn variant="fadeUp" delay={0.1}>
@@ -689,8 +660,6 @@ function App() {
                     decoding="async"
                   />
                 </div>
-              </div>
-            </AutoScrollContainer>
 
             {/* Sổ lưu bút (Floating button) */}
             <WishesSection
@@ -698,7 +667,15 @@ function App() {
               btnColor={GOLD_COLOR}
               title={text.soLuuBut || "Sổ lưu bút"}
             />
-          </div>
+          </PageLayout>
+
+          {/* Popup Gửi quà mừng */}
+          <GiftPopup
+            isOpen={showGiftPopup}
+            onClose={() => setShowGiftPopup(false)}
+            qrChuRe={images.qrChuRe || "/images/mau-2/1.webp"}
+            qrCoDau={images.qrCoDau || "/images/mau-2/2.webp"}
+          />
         </motion.div>
       )}
     </>

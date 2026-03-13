@@ -25,8 +25,8 @@ export default function RsvpForm() {
 
   if (submitted) {
     return (
-      <div className="text-center py-8 px-4">
-        <div className="text-4xl mb-3">💌</div>
+      <div className="text-center py-8 px-4 bg-white rounded-[10px] border border-gray-200">
+        <div className="text-8xl mb-3">💌</div>
         <p className="text-primary font-semibold text-base">
           Cảm ơn {ten} đã xác nhận!
         </p>

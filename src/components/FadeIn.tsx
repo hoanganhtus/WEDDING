@@ -65,7 +65,7 @@ export default function FadeIn({
     <motion.div
       initial={v.initial}
       whileInView={v.animate}
-      viewport={{ once: true, amount, margin: "0px 0px -25% 0px" }}
+      viewport={{ once: true, amount, margin: "0px 0px -10% 0px" }}
       transition={{ duration, delay, ease: "easeOut" }}
       className={cn("w-full", className)}
     >

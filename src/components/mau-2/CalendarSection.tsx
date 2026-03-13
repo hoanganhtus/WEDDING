@@ -29,7 +29,7 @@ export default function CalendarSection({
       <div className="bg-[#611010] flex justify-end gap-2 py-1">
         <span
           className="self-right mr-4 text-white text-[23px] italic"
-          style={{ fontFamily: "Aquarelle" }}
+          style={{ fontFamily: "'Scarlet Bradley', sans-serif" }}
         >
           {monthLabel} {thang}
         </span>
